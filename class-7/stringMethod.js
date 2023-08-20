@@ -224,3 +224,224 @@ textInput.addEventListener("input", function() {
 });
 
 
+
+
+/*=======================================================================
+    5. subString() 6. subStr() somewhat the same কিছুটা slice() এর মতো
+=========================================================================*/
+
+
+/*=======================================================================
+    7. replace()
+=========================================================================*/
+
+// Example: 1 Basic Example
+const replaceSentence = "I like apples and apples are tasty.";
+const replacedSentence = sentence.replace("apples", "oranges");
+
+console.log(replacedSentence); // Output: "I like oranges and oranges are tasty."
+
+
+
+// Example: 2 Replacing All Occurrences
+const replaceText = "It's raining, raining, and raining again.";
+const newReplaceText = text.replace(/raining/g, "pouring");
+
+console.log(newReplaceText); // Output: "It's pouring, pouring, and pouring again."
+
+
+
+// Example: 3 Using a Regular Expression:
+const regularSentence = "The quick brown fox jumps over the lazy dog.";
+const regularSearchTerm = /FOX/i; // Case-insensitive regular expression
+const regularReplaced = sentence.replace(regularSearchTerm, "cat");
+
+console.log(regularReplaced); // Output: "The quick brown cat jumps over the lazy dog."
+
+
+//Example: 4 Replacing with a Function:
+const sentenced = "Hello, world!";
+const newSentenced = sentenced.replace("world", function(match) {
+  return match.toUpperCase();
+});
+
+console.log(newSentenced); // Output: "Hello, WORLD!"
+
+
+
+// Example: 5 Replacing with Capture Groups
+const date = "2023-08-19";
+const newDate = date.replace(/(\d{4})-(\d{2})-(\d{2})/, "$2/$3/$1");
+
+console.log(newDate); // Output: "08/19/2023"
+
+// Example: 6
+const mydul = "Hello, world";
+const replacedMydul = mydul.replace('world', function(match){
+    console.log(match); // world
+})
+
+
+/* ********************simple string replace() method project***************************************** */
+const replaceButton = document.getElementById('replaceButton');
+const replaceTextInput = document.getElementById('textInputReplace');
+const replaceSearchInput = document.getElementById('searchInputReplace');
+const replaceInput = document.getElementById('replaceInput');
+const resultDiv = document.getElementById('resultReplace');
+
+replaceButton.addEventListener('click', () => {
+  const originalText = replaceTextInput.value;
+  const searchTerm = replaceSearchInput.value;
+  const replacement = replaceInput.value;
+
+  const updatedText = originalText.replace(new RegExp(searchTerm, 'gi'), replacement);
+
+  resultDiv.textContent = updatedText;
+});
+
+
+/*=======================================================================
+    8. toUpperCase()
+=========================================================================*/
+// Example: 1 Basic Example
+const originalText = "Hello, World!";
+const uppercaseText = originalText.toUpperCase();
+
+console.log(uppercaseText); // Output: "HELLO, WORLD!"
+
+
+
+
+// Example: 2 Using function to even single character toUpperCase()
+function weirdUppercase(text) {
+    let result = "";
+    for (let i = 0; i < text.length; i++) {
+      if (i % 2 === 0) {
+        result += text[i].toUpperCase();
+      } else {
+        result += text[i];
+      }
+    }
+    return result;
+  }
+  
+  const originalTextTOupperCase = "hello, world!";
+  const trickyUppercase = weirdUppercase(originalTextTOupperCase);
+  
+  console.log(trickyUppercase); // Output: "HeLlO, WoRlD!"
+  
+
+
+
+  // Example: 3 using function to even word uppercase
+  function emphasizeText(text) {
+    const words = text.split(' ');
+  
+    for (let i = 0; i < words.length; i++) {
+      if (i % 2 === 0) {
+        words[i] = words[i].toUpperCase();
+      }
+    }
+  
+    return words.join(' ');
+  }
+  
+  const originalWord = "this is a tricky example to demonstrate string method toUpperCase()";
+  const emphasizedText = emphasizeText(originalWord);
+  
+  console.log(emphasizedText);
+  
+
+  /*=======================================================================
+    9. toLowerCase()
+=========================================================================*/
+
+let orginalTexted = "BANGLADESH OUR COUNTRY";
+let convertLowerCase = orginalTexted.toLowerCase();
+console.log(convertLowerCase);
+
+
+
+
+
+
+
+/*=======================================================================
+    10. concat()
+=========================================================================*/
+let concateText1 = "Bangladesh ";
+let conCateText2 = "Our ";
+let conCateText3 = "Country";
+let fullTextWithConcate = concateText1 + conCateText2 + conCateText3;
+console.log(fullTextWithConcate); // Bangladesh Our Country
+
+//Another way
+let anotherConcateWay = concateText1.concat(conCateText2,conCateText3);
+console.log(anotherConcateWay);
+
+
+/* ****************Simple project using Concat() method********************* */
+const generateButton = document.getElementById('generateButton');
+const firstNameInput = document.getElementById('firstNameInput');
+const lastNameInput = document.getElementById('lastNameInput');
+const resultDivConcat = document.getElementById('resultConcate');
+
+generateButton.addEventListener('click', () => {
+  const firstName = firstNameInput.value;
+  const lastName = lastNameInput.value;
+
+  const fullName = firstName.concat(' ', lastName);
+  resultDivConcat.textContent = `Full Name: ${fullName}`;
+});
+
+
+
+
+
+/*=======================================================================
+    11. trim()
+=========================================================================*/
+const trimText = "                mydul                    islam";
+console.log(trimText); 
+const trimConvert = trimText.trim();
+console.log(trimConvert);
+
+
+
+/* ****************Simple project using trim() method********************* */
+const loginButton = document.getElementById('loginButton');
+const usernameInput = document.getElementById('usernameInput');
+const passwordInput = document.getElementById('passwordInput');
+const resultDivTrim = document.getElementById('resultPass');
+
+loginButton.addEventListener('click', () => {
+  const username = usernameInput.value.trim();
+  const password = passwordInput.value;
+
+  if (username === '' || password === '') {
+    resultDivTrim.textContent = 'Please enter both username and password.';
+  } else {
+    resultDivTrim.textContent = `Welcome, ${username}!`;
+  }
+});
+
+
+
+/*=======================================================================
+    12. split()
+=========================================================================*/
+const splitSentence = "This is a sample sentence for splitting.";
+const words1 = sentence.split(' ');
+
+console.log(words1); // [  "This",  "is",  "a",  "sample",  "sentence",  "for",  "splitting."]
+
+const words2 = sentence.split(',');
+console.log(words2);  // ['The quick brown fox jumps over the lazy dog. The fox is quick.']
+
+const words3 = sentence.split('|');
+console.log(words3); // ['The quick brown fox jumps over the lazy dog. The fox is quick.']
+
+const words4 = sentence.split('');
+console.log(words4); // ['T', 'h', 'e', ' ', 'q', 'u', 'i', 'c', 'k', ' ', 'b', 'r', 'o', 'w', 'n', ' ', 'f', 'o', 'x', ' ', 'j', 'u', 'm', 'p', 's', ' ', 'o', 'v', 'e', 'r', ' ', 't', 'h', 'e', ' ', 'l', 'a', 'z', 'y', ' ', 'd', 'o', 'g', '.', ' ', 'T', 'h', 'e', ' ', 'f', 'o', 'x', ' ', 'i', 's', ' ', 'q', 'u', 'i', 'c', 'k', '.']
+
+const words5 = words4.split('')[1]; // h
