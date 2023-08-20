@@ -444,4 +444,3 @@ console.log(words3); // ['The quick brown fox jumps over the lazy dog. The fox i
 const words4 = sentence.split('');
 console.log(words4); // ['T', 'h', 'e', ' ', 'q', 'u', 'i', 'c', 'k', ' ', 'b', 'r', 'o', 'w', 'n', ' ', 'f', 'o', 'x', ' ', 'j', 'u', 'm', 'p', 's', ' ', 'o', 'v', 'e', 'r', ' ', 't', 'h', 'e', ' ', 'l', 'a', 'z', 'y', ' ', 'd', 'o', 'g', '.', ' ', 'T', 'h', 'e', ' ', 'f', 'o', 'x', ' ', 'i', 's', ' ', 'q', 'u', 'i', 'c', 'k', '.']
 
-const words5 = words4.split('')[1]; // h
