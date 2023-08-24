@@ -701,29 +701,29 @@ i: 2, j: 1
 
 // Project : 1
 
-// const tableOutput = document.getElementById("tableOutput");
+const tableOutput = document.getElementById("tableOutput");
 
-// const minNumber = parseInt(prompt("Enter the minimum number:"));
-// const maxNumber = parseInt(prompt("Enter the maximum number:"));
+const minNumber = parseInt(prompt("Enter the minimum number:"));
+const maxNumber = parseInt(prompt("Enter the maximum number:"));
 
-// // Validate the input
-// if (isNaN(minNumber) || isNaN(maxNumber)) {
-//   tableOutput.textContent = "Invalid input. Please enter valid numbers.";
-// } else {
-//   let tableHTML = `<h2>Multiplication table for ${minNumber} to ${maxNumber}:</h2><ul>`;
+// Validate the input
+if (isNaN(minNumber) || isNaN(maxNumber)) {
+  tableOutput.textContent = "Invalid input. Please enter valid numbers.";
+} else {
+  let tableHTML = `<h2>Multiplication table for ${minNumber} to ${maxNumber}:</h2><ul>`;
 
-//   // Generate the multiplication table
-//   for (let i = minNumber; i <= maxNumber; i++) {
-//     tableHTML += `<li><strong>Namota is : ${i}:</strong><ul>`;
-//     for (let j = 1; j <= 10; j++) {
-//       tableHTML += `<li>${i} * ${j} = ${i * j}</li>`;
-//     }
-//     tableHTML += `</ul></li>`;
-//   }
+  // Generate the multiplication table
+  for (let i = minNumber; i <= maxNumber; i++) {
+    tableHTML += `<li><strong>Namota is : ${i}:</strong><ul>`;
+    for (let j = 1; j <= 10; j++) {
+      tableHTML += `<li>${i} * ${j} = ${i * j}</li>`;
+    }
+    tableHTML += `</ul></li>`;
+  }
 
-//   tableHTML += `</ul>`;
-//   tableOutput.innerHTML = tableHTML;
-// }
+  tableHTML += `</ul>`;
+  tableOutput.innerHTML = tableHTML;
+}
 
 
 // Project: 2 simple counter project using for loop
