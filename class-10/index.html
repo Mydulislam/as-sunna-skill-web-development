@@ -1,14 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Object || JSON || Event</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body onload="loadRandomQuote()">
     <canvas id="myCanvas"></canvas>
+
+    <!--============================================================== 
+                                    Onclick Event Area Start
+     =================================================================-->
+    <div>
+        <h1>Onclick Event</h1>
+        <p id="date1"></p>
+        <button onclick="clickEvent()">Show Date</button>
+    </div>
+    <!--=========================== ==================================
+                                    Onclick Event Area End
+     ================================================================-->
+
+
+
+
+
+    <!--============================================================== 
+                                    Onchange Event Area Start
+     =================================================================-->
+    <div>
+        <h1>Onchange Event</h1>
+        <select id="item1" onchange="selectMenu()">
+            <option value="Bangla">Bangla</option>
+            <option value="English">English</option>
+            <option value="Math">Math</option>
+            <option value="Biology">Biology</option>
+            <option value="Physics">Physics</option>
+        </select>
+        <p id="selectedItem"></p>
+    </div>
+    <!--=========================== ==================================
+                                    Onchange Event Area End
+     ================================================================-->
+
+
+
+
+
+    <!--============================================================== 
+                                    Onblur Event Area Start
+     =================================================================-->
+    <div>
+        <h1>Onblur Event</h1>
+        <input type="text" id="inputValue" onblur="valueUpperCase()">
+    </div>
+    <!--=========================== ==================================
+                                    Onblur Event Area End
+     ================================================================-->
+
+
+
+    <!--============================================================== 
+                                    Onfocus Event Area Start
+     =================================================================-->
+    <div>
+        <h1>Onfocus Event</h1>
+        <input type="text" id="myInput" onfocus="inputFocus()" placeholder="Click me or tab into me">
+        <p id="message"></p>
+
+        <h2>Input Field Focus Changer</h2>
+
+        <input type="text" onfocus="changeBackgroundColor(this)" placeholder="Click me or tab into me">
+        <input type="text" onfocus="changeBackgroundColor(this)" placeholder="Click me or tab into me">
+        <input type="text" onfocus="changeBackgroundColor(this)" placeholder="Click me or tab into me">
+    </div>
+    <!--=========================== ==================================
+                                    Onfocus Event Area End
+     ================================================================-->
+
+
+
+
+    <!--=========================== ==================================
+                    OnmouseOver and OnmouseOUT Event Area start
+     ================================================================-->
+
+    <h2>Mouse Over And Mouse Out Event Example</h2>
+
+    <div class="box" onmouseover="highlightBox(this)" onmouseout="unhighlightBox(this)">Hover me</div>
+
+
+    <!--=========================== ==================================
+                   OnmouseOver and OnmouseOUT Event Area End
+     ================================================================-->
+
+
+
+    <!--=========================== ==================================
+                   OnkeyDown Event Area start
+     ================================================================-->
+    <h2>OnKeyDown Event</h2>
+    <input type="text" id="textInput" onkeydown="handleKeyDown(event)" placeholder="Type something">
+
+    <p id="onkeyessage"></p>
+
+    <!--=========================== ==================================
+                   OnkeyDown Event Area end
+     ================================================================-->
+
+
+    <!--=========================== ==================================
+                   Onload Event Area start
+     ================================================================-->
+
+    <h2>Random Quote Generator Usnig Onload Event</h2>
+
+    <blockquote>
+        <p id="quote">Loading...</p>
+        <cite id="author"></cite>
+    </blockquote>
+
+    <button onclick="loadRandomQuote()">Load Another Quote</button>
+
+    <!--=========================== ==================================
+                   Onload Event Area End
+     ================================================================-->
+
+
+    <!--=========================== ==================================
+                   Keypress Listener Event Area Start
+     ================================================================-->
+    <h2>Keypress Event Listener</h2>
+
+    <input type="text" id="textInput1" placeholder="Type something">
+
+    <p id="keyPressMessage"></p>
+
+
+
+    <!-- Project Keypress listener -->
+    <h2>Simple Piano</h2>
+
+    <div class="key" data-key="65">A</div>
+    <div class="key" data-key="83">S</div>
+    <div class="key" data-key="68">D</div>
+    <div class="key" data-key="70">F</div>
+    <div class="key" data-key="71">G</div>
+    <div class="key" data-key="72">H</div>
+    <div class="key" data-key="74">J</div>
+    <div class="key" data-key="75">K</div>
+    <div class="key" data-key="76">L</div>
+    <!--=========================== ==================================
+                   Keypress Listener Event Area end
+     ================================================================-->
+
     <script src="mathObject.js"></script>
     <script src="json.js"></script>
     <script src="event.js"></script>
 </body>
+
 </html>

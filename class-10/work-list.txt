@@ -3,5 +3,4 @@
     i) (https://www.youtube.com/watch?v=iiADhChRriM&pp=ygUSanNvbiBzdGFjayBsZWFybmVy)
     2) 
 3) localStorage (setItem, getItem)
-4) event
-5) 
+4) event (onclick, onblur, onChange, onMouseOver, onMouseOut, oneKeydown, onload keypressLister)
