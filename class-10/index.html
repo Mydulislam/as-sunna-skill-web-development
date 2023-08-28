@@ -156,9 +156,48 @@
                    Keypress Listener Event Area end
      ================================================================-->
 
+
+    <!--=========================== ==================================
+                   JSON Fetch Data area start
+     ================================================================-->
+
+    <h2>Fetch a JSON file with XMLHttpRequest</h2>
+    <p id="demo"></p>
+    <!--=========================== ==================================
+                   JSON Fetch Data area end
+     ================================================================-->
+
+   <!-- Project 2  -->
+    <h2>Make a table based on the value of a drop down menu.</h2>
+
+    <select id="myselect" onchange="change_myselect(this.value)">
+        <option value="">Choose an option:</option>
+        <option value="customers">Customers</option>
+        <option value="products">Products</option>
+        <option value="suppliers">Suppliers</option>
+    </select>
+
+    <p id="fetchDemo"></p>
+
+
+
+    <!--=========================== ==================================
+                   TODO Lists area start
+     ================================================================-->
+     <div class="container">
+        <h1>Todo List</h1>
+        <input type="text" id="taskInput" placeholder="Add a new task">
+        <button class="button" id="addButton">Add</button>
+        <ul id="taskList"></ul>
+      </div>
+    <!--=========================== ==================================
+                   TODO Lists area end
+     ================================================================-->
+
+
     <script src="mathObject.js"></script>
-    <script src="json.js"></script>
     <script src="event.js"></script>
+    <script src="json.js"></script>
 </body>
 
 </html>
