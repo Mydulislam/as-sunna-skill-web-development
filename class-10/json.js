@@ -65,10 +65,10 @@ console.log(jsonObject);
 const myJSON = '{"name":"John", "age":30, "car":null}';
 const myObj = JSON.parse(myJSON);
 
-// Accessing Object Values
-const myJSON1 = '{"name":"John", "age":30, "car":null}';
-let myObj1 = JSON.parse(myJSON1);
-x = myObj1.name;
+// // Accessing Object Values
+// const myJSON1 = '{"name":"John", "age":30, "car":null}';
+// let myObj1 = JSON.parse(myJSON1);
+// x = myObj1.name;
 
 
 /*==================================================================== 
