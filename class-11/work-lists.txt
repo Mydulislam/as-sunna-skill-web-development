@@ -1,0 +1,4 @@
+1) Scope (local scope, global, block scope, lexical scope)
+2) Hoisting
+3) Event
+4) This keyword
