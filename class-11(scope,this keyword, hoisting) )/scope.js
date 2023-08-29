@@ -188,8 +188,8 @@ function outerFunction(outerParam) {
     };
   }
   
-  var closure = outerFunction("Hello");
-  closure("World");
+  // var closure2 = outerFunction("Hello");
+  // closure2("World");
   
 
 
@@ -287,12 +287,12 @@ var x = 10;
 
 
 // Example : 4 
-let y = 10;
+// let y = 10;
 
-(() => {
-  console.log(y); // Outputs 10 (block-scoped y)
-  let y = 20;
-})();
+// (() => {
+//   console.log(y); // Outputs 10 (block-scoped y)
+//   let y = 20;
+// })();
 
 
 
@@ -386,6 +386,6 @@ function outer() {
     return inner;
   }
   
-  const closure = outer();
-  closure();
+  const closure1 = outer();
+  closure1();
   
