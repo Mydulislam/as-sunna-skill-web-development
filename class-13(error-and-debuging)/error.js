@@ -635,3 +635,38 @@ promise
     .catch(error => {
         console.error('Promise error:', error.message);
     });
+
+
+
+
+// Example: 5 Using .catch() Incorrectly:
+
+const promise = Promise.reject(new Error('Promise rejected'));
+
+promise
+    .then(result => {
+        console.log(result);
+    })
+    .catch(() => {
+        throw new Error('Catch block error');
+    });
+
+
+
+// Example: 6 Promise Timeout:
+
+const timeout = 1000;
+
+const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        reject(new Error('Promise timed out'));
+    }, timeout);
+});
+
+promise
+    .then(result => {
+        console.log(result);
+    })
+    .catch(error => {
+        console.error('Promise error:', error.message);
+    });
