@@ -1,0 +1,7 @@
+1) When i click on the love icon then it is change it red color
+2) post image and user image are same but user image will be different please solve this
+3) footer content only show "text" in some card. please solve it where no hardcoded "text"
+4) In the footer post comment user is 'undefined' and 'undefined'. here will a user name and his comments please solve this
+5) In the top right side 'love' icon click then you will show the like content but again click the liked element will duble inserted
+6) In the top right side 'hide' icon click then you will show the hide content but again click the hide element wiill doyble inserted 
+
