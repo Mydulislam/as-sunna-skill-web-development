@@ -1,0 +1,8 @@
+Array Iteration Method
+1) Map
+2) Filter
+3) Find
+4) Foreach
+5) Reduce
+6) some
+7) every
