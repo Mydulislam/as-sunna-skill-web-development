@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Propagation</title>
+</head>
+
+<body>
+    <!-- Capturing Phase: -->
+    <div id="outer">
+        <div id="middle">
+            <div id="inner">Click me!</div>
+        </div>
+    </div>
+
+
+    <!-- Bubbling Phase: -->
+
+    <div id="outer1">
+        <div id="middle1">
+            <div id="inner1">Click me!</div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Stopping Propagation: -->
+
+    <div>
+        <button id="stopPropagationBtn">Click me!</button>
+    </div>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <script src="eventPropagation.js"></script>
+</body>
+
+</html>

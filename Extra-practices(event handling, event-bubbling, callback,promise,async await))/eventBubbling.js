@@ -63,3 +63,21 @@ itemList.addEventListener("click", function (event) {
     alert(`Clicked on ${event.target.textContent}`);
   }
 });
+
+
+
+/* ===========================================
+    Event Delegation with Dynamic Elements:
+==============================================*/
+
+document.getElementById('dynamicList').addEventListener('click', function (event) {
+  if (event.target.tagName === 'LI') {
+    alert('Clicked on dynamically added item: ' + event.target.innerText);
+  }
+});
+
+document.getElementById('addItem').addEventListener('click', function () {
+  const newItem = document.createElement('li');
+  newItem.textContent = 'New Item';
+  document.getElementById('dynamicList').appendChild(newItem);
+});
