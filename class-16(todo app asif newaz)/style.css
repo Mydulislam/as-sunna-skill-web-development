@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form input {
+    padding: 9px 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    outline: none;
+}
+form#todo-form button {
+    padding: 8px 20px;
+    font-size: 18px;
+}
+.todo-list {
+    padding-left: 20px;
+}
+
+.btn {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.delete-btn {
+    color: #ff0000;
+}
+
+.completed-btn {
+    color: green
+}
+
+.btn-cursor-disabled {
+    pointer-events: none;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
