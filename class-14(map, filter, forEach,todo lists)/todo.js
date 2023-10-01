@@ -50,7 +50,7 @@
 
 /*============================================================== 
 
-// Second Part with delete with edit funtionality
+// Second Part with delete and edit funtionality
 
 ================================================================*/
 

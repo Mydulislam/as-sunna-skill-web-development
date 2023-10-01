@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel With Jquery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="testimonial-heading">
+            <h5>Testimonials</h5>
+            <h1>Lorem ipsum dolor sit amet.</h1>
+        </div>
+        <div class="testimonials">
+            <div class="single-testimonials">
+                <div class="testimonial-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis animi quidem excepturi repellendus dolorem fugiat inventore aperiam tenetur optio omnis, adipisci in? Ut doloremque, illo nobis explicabo rerum modi qui tenetur at quos, repellat dignissimos dolorem facere iusto, nulla dolore.</p>
+                </div>
+                <h3>Ratul Ahmed</h3>
+                <p class="author-descri">Web Developer</p>
+            </div>
+            <div class="single-testimonials">
+                <div class="testimonial-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis animi quidem excepturi repellendus dolorem fugiat inventore aperiam tenetur optio omnis, adipisci in? Ut doloremque, illo nobis explicabo rerum modi qui tenetur at quos, repellat dignissimos dolorem facere iusto, nulla dolore.</p>
+                </div>
+                <h3>Ratul Ahmed</h3>
+                <p class="author-descri">Web Developer</p>
+            </div>
+            <div class="single-testimonials">
+                <div class="testimonial-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis animi quidem excepturi repellendus dolorem fugiat inventore aperiam tenetur optio omnis, adipisci in? Ut doloremque, illo nobis explicabo rerum modi qui tenetur at quos, repellat dignissimos dolorem facere iusto, nulla dolore.</p>
+                </div>
+                <h3>Ratul Ahmed</h3>
+                <p class="author-descri">Web Developer</p>
+            </div>
+            <div class="single-testimonials">
+                <div class="testimonial-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis animi quidem excepturi repellendus dolorem fugiat inventore aperiam tenetur optio omnis, adipisci in? Ut doloremque, illo nobis explicabo rerum modi qui tenetur at quos, repellat dignissimos dolorem facere iusto, nulla dolore.</p>
+                </div>
+                <h3>Ratul Ahmed</h3>
+                <p class="author-descri">Web Developer</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".testimonials").slick({
+                autoplay : true,
+                autoplaySpeed : 3000,
+                dots : true,
+                prevArrow : '<button type="button" class="slick-prev"><</button>',
+                nextArrow : '<button type="button" class="slick-next">></button>'
+            })
+        })
+    </script>
+</body>
+</html>

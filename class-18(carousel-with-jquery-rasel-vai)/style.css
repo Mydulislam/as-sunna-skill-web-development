@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+    font-family: sans-serif;
+}
+.container{
+    max-width: 1000px;
+    margin:30px auto;
+    padding:20px;
+    background-color: #fff;
+}
+.testimonial-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.single-testimonials {
+    text-align: center;
+}
+.testimonial-content {
+    margin-bottom: 30px;
+}
+.slick-arrow {
+    width: 40px;
+    height: 40px;
+    background: red;
+    color: #fff;
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    margin-top: -45px;
+    cursor: pointer;
+}
+.slick-next {
+    left: auto;
+    right: -40px;
+}
+ul.slick-dots {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.slick-dots li button {
+    text-indent: -9999px;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border: none;
+    border-radius: 50%;
+    margin: 6px;
+    cursor: pointer;
+}
+
+li.slick-active button {
+    background: black;
+}
