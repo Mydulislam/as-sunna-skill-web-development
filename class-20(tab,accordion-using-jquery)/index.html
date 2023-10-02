@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tab</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 </head>
+
 <body>
     <div class="container">
         <div class="as-tab">
             <ul>
-                <li><a href="#tab-content-1">Tab 1</a></li>
+                <li><a class="active" href="#tab-content-1">Tab 1</a></li>
                 <li><a href="#tab-content-2">Tab 2</a></li>
                 <li><a href="#tab-content-3">Tab 3</a></li>
             </ul>
 
             <div style="display: block;" class="tab-content" id="tab-content-1">Tab Content 1</div>
             <div class="tab-content" id="tab-content-2">Tab Content 2</div>
-            <div class="tab-content" id="tab-content-3">Tab Content 2</div>
+            <div class="tab-content" id="tab-content-3">Tab Content 3</div>
         </div>
     </div>
+    <script>
+        jQuery(document).ready(function ($) {
+
+            let tabSelector = '.as-tab>ul li a';
+            $(tabSelector).click(function (e) {
+                event.preventDefault();
+
+                let targetElement = $(this).attr('href');
+                $('.tab-content').hide(); // Element ke hide korano
+                $(targetElement).show(); // clickable element ke show korano
+
+                $(tabSelector).removeClass('active')
+                $(this).addClass('active');
+            })
+        })
+    </script>
 </body>
+
 </html>

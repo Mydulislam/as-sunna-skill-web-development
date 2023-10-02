@@ -1,0 +1,7 @@
+.tab-content{
+    display: none;
+}
+
+.as-tab>ul li a.active{
+    color:red;
+}
